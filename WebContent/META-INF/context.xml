@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is a Tomcat specific file that tells him how to connect to the database
+an how to configure the connection pool
+The database connection pool allow the application to scale and handle multiple users -->
+<Context>
+
+	<Resource name="jdbc/webtodolist"
+	auth="Container" type="javax.sql.DataSource"
+	driverClassName="com.mysql.cj.jdbc.Driver"
+	maxActive="20" maxIdle="5" maxWait="10000"
+	username="root" password="sub@89NW"
+	url="jdbc:mysql://localhost:3306/webtodolist?useSSL=false"/>
+
+</Context>
